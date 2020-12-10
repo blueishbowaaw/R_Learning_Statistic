@@ -1,0 +1,40 @@
+-- Assessment_SQL
+-- By Sulaiman Hawibowo
+
+-- Hi, in this section I would answering my SQL's Assessment from a Dataset Superstore Simple! 
+-- note: your feedback and correction would be appriciated :) Thank YOU
+
+SELECT * FROM dataset_superstore_simple;
+--No.1
+SELECT sum(sales) as total_sales, 
+	customer_id FROM dataset_superstore_simple 
+	GROUP BY customer_id 
+	ORDER BY total_sales DESC 
+	LIMIT 1;
+	
+--No.2
+SELECT sum(profit) as total_profit, 
+	category, sub_category FROM dataset_superstore_simple 
+WHERE category = 'Office Supplies' 
+GROUP BY category, sub_category; 
+
+--No.3 
+SELECT order_id, profit FROM dataset_superstore_simple 
+WHERE profit < 0;
+SELECT count(order_id) as 'jumlah_profit<0' FROM dataset_superstore_simple 
+WHERE profit < 0;
+
+--No.4
+SELECT sum(sales) as total_sales, 
+	customer_id FROM dataset_superstore_simple 
+WHERE customer_id IN ('JE-16165','KH-16510', 'AD-10180') 
+GROUP BY customer_id 
+ORDER BY total_sales DESC 
+LIMIT 1;
+
+--No.5
+SELECT sum(profit) as total_profit, 
+	order_date FROM dataset_superstore_simple 
+GROUP BY order_date 
+ORDER BY total_profit DESC
+LIMIT 1;
