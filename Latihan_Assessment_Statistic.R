@@ -1,5 +1,9 @@
-case_1 = read.csv("dataset_superstore_simple.csv")
+#Edited by: Sulaiman Hawibowo
+#Self Assessment for Basic Statistic with R Language
 
+#Soal1. Lakukan uji univariat terhadap masing-masing variabel sales dan profit (mean, median, standar deviasi, dan variansi)! 
+#Jelaskan arti dari masing-masing angka tersebut!
+case_1 = read.csv("dataset_superstore_simple.csv")
 #Case1
 attach(case_1)
 summary(case_1)
@@ -11,6 +15,7 @@ sd(sales)
 sd(profit)
 var(sales)
 var(profit)
+
 
 #Case2
 case_1$order_date = as.Date(case_1$order_date)
