@@ -16,8 +16,9 @@ sd(profit)
 var(sales)
 var(profit)
 
-
+#Grafik apa yang paling sesuai untuk memvisualisasikan histori sales selama tahun 2015? Buatlah visualisasinya!
 #Case2
+case_1 = read.csv("dataset_superstore_simple.csv")
 case_1$order_date = as.Date(case_1$order_date)
 str(case_1)
 order(case_1$order_date)
@@ -31,6 +32,7 @@ count2 = table(sales)
 View(count2)
 barplot(count2)
 
+#Apakah ada korelasi antara variabel sales dan profit? 
 #Case3
 korelasi = cor(profit,sales)
 
