@@ -34,6 +34,8 @@ barplot(count2)
 
 #Apakah ada korelasi antara variabel sales dan profit? 
 #Case3
+case_1 = read.csv("dataset_superstore_simple.csv")
+attach(case_1)
 korelasi = cor(profit,sales)
 
 #Case4
