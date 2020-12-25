@@ -39,6 +39,7 @@ case_1 = read.csv("dataset_superstore_simple.csv")
 attach(case_1)
 korelasi = cor(profit,sales)
 
+#Visualisasi data apa yang cocok untuk menjelaskan hubungan antara variabel sales dan profit untuk tahun 2015-2016? Buatlah visualisasinya!
 #Case4
 sorted_date2 = subset(sorted, order_date >= "2015-01-01" & order_date <= "2016-12-31")
 attach(sorted_date2)
