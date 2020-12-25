@@ -47,6 +47,7 @@ scatter.smooth(x = sales, y = profit)
 barplot(sales)
 plot(sales,profit, type = "l")
 
+#Buatlahmodelregresiuntukmemprediksivariabelprofit.Jelaskanhasildarimodel yang kamu dapatkan, dan berilah rekomendasi kepada manajemen perusahaan tersebut.
 #Case5
 case_5 = read.csv("dataset_superstore_simple.csv")
 attach(case_5)
