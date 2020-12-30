@@ -62,4 +62,4 @@ summary(linearmod)
 # didapatkan data bahwa yang akhirnya melakukan pembelian adalah 1.530 pengguna untuk versi lama, dan 1.970 untuk versi baru.
 #Lakukan uji hipotesis dari data yang didapat, dan berilah rekomendasi untuk manajemen apa yang harus dilakukan!
 #Case6
-prop.test(c(1530,1970), c(10000,10000))
+case6 = prop.test(c(1530,1970), c(10000,10000))
